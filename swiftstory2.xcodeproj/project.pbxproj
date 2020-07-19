@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CA56AE63EDF86C88E13B378 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5655B6F508E1D536732A3 /* Constants.swift */; };
 		CB178CE324BBEB810099C11C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB178CE224BBEB810099C11C /* AppDelegate.swift */; };
 		CB178CE524BBEB810099C11C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB178CE424BBEB810099C11C /* SceneDelegate.swift */; };
 		CB178CE724BBEB810099C11C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB178CE624BBEB810099C11C /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CA5655B6F508E1D536732A3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CB178CDF24BBEB800099C11C /* swiftstory2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftstory2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB178CE224BBEB810099C11C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB178CE424BBEB810099C11C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CA56757207482F5DF2958D3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5655B6F508E1D536732A3 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		CB178CD624BBEB800099C11C = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +116,7 @@
 				CB178CEB24BBEB830099C11C /* Assets.xcassets */,
 				CB178CED24BBEB830099C11C /* LaunchScreen.storyboard */,
 				CB178CF024BBEB830099C11C /* Info.plist */,
+				1CA56757207482F5DF2958D3 /* Common */,
 			);
 			path = swiftstory2;
 			sourceTree = "<group>";
@@ -262,6 +273,7 @@
 				CB178CE724BBEB810099C11C /* ViewController.swift in Sources */,
 				CB178CE324BBEB810099C11C /* AppDelegate.swift in Sources */,
 				CB178CE524BBEB810099C11C /* SceneDelegate.swift in Sources */,
+				1CA56AE63EDF86C88E13B378 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
