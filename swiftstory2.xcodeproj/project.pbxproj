@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CA562631F42C90E11067F06 /* HttpDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA56EDFC0259657154E5F38 /* HttpDatas.swift */; };
 		1CA56AE63EDF86C88E13B378 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5655B6F508E1D536732A3 /* Constants.swift */; };
 		8EDCEE305A833949409BCD15 /* Pods_swiftstory2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FE6C20AFA7F1990061C635 /* Pods_swiftstory2.framework */; };
 		CB178CE324BBEB810099C11C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB178CE224BBEB810099C11C /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		1CA5655B6F508E1D536732A3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1CA56EDFC0259657154E5F38 /* HttpDatas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpDatas.swift; sourceTree = "<group>"; };
 		392FDE2FC7E8B65EB5DC8CEC /* Pods-swiftstory2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftstory2.debug.xcconfig"; path = "Target Support Files/Pods-swiftstory2/Pods-swiftstory2.debug.xcconfig"; sourceTree = "<group>"; };
 		5E5F1D2280C3F8CB46603CBC /* Pods_swiftstory2_swiftstory2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftstory2_swiftstory2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6562D1F0CF2144649E479DAD /* Pods-swiftstory2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftstory2.release.xcconfig"; path = "Target Support Files/Pods-swiftstory2/Pods-swiftstory2.release.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +109,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		1CA562BF8079FC278AEA194E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1CA56EDFC0259657154E5F38 /* HttpDatas.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		1CA56757207482F5DF2958D3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +168,7 @@
 				CB178CED24BBEB830099C11C /* LaunchScreen.storyboard */,
 				CB178CF024BBEB830099C11C /* Info.plist */,
 				1CA56757207482F5DF2958D3 /* Common */,
+				1CA562BF8079FC278AEA194E /* Network */,
 			);
 			path = swiftstory2;
 			sourceTree = "<group>";
@@ -423,6 +434,7 @@
 				CB178CE324BBEB810099C11C /* AppDelegate.swift in Sources */,
 				CB178CE524BBEB810099C11C /* SceneDelegate.swift in Sources */,
 				1CA56AE63EDF86C88E13B378 /* Constants.swift in Sources */,
+				1CA562631F42C90E11067F06 /* HttpDatas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
