@@ -13,11 +13,11 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        addController()
+        addControllers()
         // Do any additional setup after loading the view.
     }
 
-    private func addController(){
+    private func addControllers(){
         addChildController(ViewController(), title: "首页",
                 image: "TabBarIcon.Home.unselected", selectImg: "TabBarIcon.Home.selected")
         addChildController(SecondVideoViewController(), title: "西瓜视频",
