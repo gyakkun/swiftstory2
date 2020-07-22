@@ -30,14 +30,35 @@ class TabBarViewController: UITabBarController {
 
     private func addChildController(_ childVC: UIViewController, title: String, image: String,
                                     selectImg: String) {
+
         // item title text
         childVC.tabBarItem.title = title
 
+        let size = CGSize(width: 40, height: 40)
+
+        UIGraphicsBeginImageContext(size)
+
+        var tmpUnselectedImage = UIImage(named: image)?
+                .draw(in: CGRect(x: 0, y: 0, width: size.height, height: size.width))
+
+        var realUnselectedImage = UIGraphicsGetImageFromCurrentImageContext()
+
+        UIGraphicsEndImageContext()
+
         // unselected image
-        childVC.tabBarItem.image = UIImage(named: image)?.withRenderingMode(.alwaysOriginal)
+        childVC.tabBarItem.image = realUnselectedImage?.withRenderingMode(.alwaysOriginal)
+
+        UIGraphicsBeginImageContext(size)
+
+        var tmpSelectedImage = UIImage(named: selectImg)?
+                .draw(in: CGRect(x: 0, y: 0, width: size.height, height: size.width))
+
+        var realSelectedImage = UIGraphicsGetImageFromCurrentImageContext()
+
+        UIGraphicsEndImageContext()
 
         // selected image
-        childVC.tabBarItem.selectedImage = UIImage(named: selectImg)?.withRenderingMode(.alwaysOriginal)
+        childVC.tabBarItem.selectedImage = realSelectedImage?.withRenderingMode(.alwaysOriginal)
 
         // selected text color
         UITabBarItem.appearance().setTitleTextAttributes(
