@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CA561DA78B1116070443274 /* FirstHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA56B8287A658C5A45CEA48 /* FirstHomeViewController.swift */; };
 		1CA562631F42C90E11067F06 /* HttpDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA56EDFC0259657154E5F38 /* HttpDatas.swift */; };
+		1CA56510906B8FED7F4095D3 /* SecondVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA562A25E0476520F8EEFBE /* SecondVideoViewController.swift */; };
+		1CA566650828335897732414 /* ThirdMicroVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA56B3FB7BE10B0B8C40ECB /* ThirdMicroVideoViewController.swift */; };
 		1CA56AE63EDF86C88E13B378 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5655B6F508E1D536732A3 /* Constants.swift */; };
+		1CA56E26822F5E182B766B91 /* FourthMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA561FAE55C7AB59E8AFAE1 /* FourthMineViewController.swift */; };
 		8EDCEE305A833949409BCD15 /* Pods_swiftstory2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FE6C20AFA7F1990061C635 /* Pods_swiftstory2.framework */; };
-		CB0ABEEF24C74927001EA131 /* FirstHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0ABEEA24C74927001EA131 /* FirstHomeViewController.swift */; };
 		CB0ABEF024C74927001EA131 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0ABEEB24C74927001EA131 /* TabBarViewController.swift */; };
-		CB0ABEF124C74927001EA131 /* FourthMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0ABEEC24C74927001EA131 /* FourthMineViewController.swift */; };
-		CB0ABEF224C74927001EA131 /* SecondVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0ABEED24C74927001EA131 /* SecondVideoViewController.swift */; };
-		CB0ABEF324C74927001EA131 /* ThirdMicroVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0ABEEE24C74927001EA131 /* ThirdMicroVideoViewController.swift */; };
 		CB178CE324BBEB810099C11C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB178CE224BBEB810099C11C /* AppDelegate.swift */; };
 		CB178CE724BBEB810099C11C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB178CE624BBEB810099C11C /* ViewController.swift */; };
 		CB178CEA24BBEB810099C11C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB178CE824BBEB810099C11C /* Main.storyboard */; };
@@ -44,7 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CA561FAE55C7AB59E8AFAE1 /* FourthMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthMineViewController.swift; sourceTree = "<group>"; };
+		1CA562A25E0476520F8EEFBE /* SecondVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVideoViewController.swift; sourceTree = "<group>"; };
 		1CA5655B6F508E1D536732A3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1CA56B3FB7BE10B0B8C40ECB /* ThirdMicroVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdMicroVideoViewController.swift; sourceTree = "<group>"; };
+		1CA56B8287A658C5A45CEA48 /* FirstHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstHomeViewController.swift; sourceTree = "<group>"; };
 		1CA56EDFC0259657154E5F38 /* HttpDatas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpDatas.swift; sourceTree = "<group>"; };
 		392FDE2FC7E8B65EB5DC8CEC /* Pods-swiftstory2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftstory2.debug.xcconfig"; path = "Target Support Files/Pods-swiftstory2/Pods-swiftstory2.debug.xcconfig"; sourceTree = "<group>"; };
 		5E5F1D2280C3F8CB46603CBC /* Pods_swiftstory2_swiftstory2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftstory2_swiftstory2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,11 +57,7 @@
 		B9FDB9F1C6417C6279C18193 /* Pods-swiftstory2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftstory2Tests.debug.xcconfig"; path = "Target Support Files/Pods-swiftstory2Tests/Pods-swiftstory2Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C020EA97D61C892AB0CBE406 /* Pods-swiftstory2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftstory2Tests.release.xcconfig"; path = "Target Support Files/Pods-swiftstory2Tests/Pods-swiftstory2Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CAB748AF9A8CB16B8D73936A /* Pods-swiftstory2-swiftstory2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftstory2-swiftstory2UITests.release.xcconfig"; path = "Target Support Files/Pods-swiftstory2-swiftstory2UITests/Pods-swiftstory2-swiftstory2UITests.release.xcconfig"; sourceTree = "<group>"; };
-		CB0ABEEA24C74927001EA131 /* FirstHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstHomeViewController.swift; sourceTree = "<group>"; };
 		CB0ABEEB24C74927001EA131 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		CB0ABEEC24C74927001EA131 /* FourthMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthMineViewController.swift; sourceTree = "<group>"; };
-		CB0ABEED24C74927001EA131 /* SecondVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVideoViewController.swift; sourceTree = "<group>"; };
-		CB0ABEEE24C74927001EA131 /* ThirdMicroVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdMicroVideoViewController.swift; sourceTree = "<group>"; };
 		CB178CDF24BBEB800099C11C /* swiftstory2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftstory2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB178CE224BBEB810099C11C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB178CE624BBEB810099C11C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +124,17 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		1CA562F8D1CB17E4FC8628F4 /* TabViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1CA562A25E0476520F8EEFBE /* SecondVideoViewController.swift */,
+				1CA56B3FB7BE10B0B8C40ECB /* ThirdMicroVideoViewController.swift */,
+				1CA56B8287A658C5A45CEA48 /* FirstHomeViewController.swift */,
+				1CA561FAE55C7AB59E8AFAE1 /* FourthMineViewController.swift */,
+			);
+			path = TabViewController;
+			sourceTree = "<group>";
+		};
 		1CA56757207482F5DF2958D3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,11 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				CB178CE224BBEB810099C11C /* AppDelegate.swift */,
-				CB0ABEEA24C74927001EA131 /* FirstHomeViewController.swift */,
-				CB0ABEEC24C74927001EA131 /* FourthMineViewController.swift */,
-				CB0ABEED24C74927001EA131 /* SecondVideoViewController.swift */,
 				CB0ABEEB24C74927001EA131 /* TabBarViewController.swift */,
-				CB0ABEEE24C74927001EA131 /* ThirdMicroVideoViewController.swift */,
 				CB178CE624BBEB810099C11C /* ViewController.swift */,
 				CB178CE824BBEB810099C11C /* Main.storyboard */,
 				CB178CEB24BBEB830099C11C /* Assets.xcassets */,
@@ -180,6 +187,7 @@
 				CB178CF024BBEB830099C11C /* Info.plist */,
 				1CA56757207482F5DF2958D3 /* Common */,
 				1CA562BF8079FC278AEA194E /* Network */,
+				1CA562F8D1CB17E4FC8628F4 /* TabViewController */,
 			);
 			path = swiftstory2;
 			sourceTree = "<group>";
@@ -441,15 +449,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB0ABEEF24C74927001EA131 /* FirstHomeViewController.swift in Sources */,
-				CB0ABEF324C74927001EA131 /* ThirdMicroVideoViewController.swift in Sources */,
-				CB0ABEF124C74927001EA131 /* FourthMineViewController.swift in Sources */,
 				CB178CE724BBEB810099C11C /* ViewController.swift in Sources */,
-				CB0ABEF224C74927001EA131 /* SecondVideoViewController.swift in Sources */,
 				CB178CE324BBEB810099C11C /* AppDelegate.swift in Sources */,
 				CB0ABEF024C74927001EA131 /* TabBarViewController.swift in Sources */,
 				1CA56AE63EDF86C88E13B378 /* Constants.swift in Sources */,
 				1CA562631F42C90E11067F06 /* HttpDatas.swift in Sources */,
+				1CA56510906B8FED7F4095D3 /* SecondVideoViewController.swift in Sources */,
+				1CA566650828335897732414 /* ThirdMicroVideoViewController.swift in Sources */,
+				1CA561DA78B1116070443274 /* FirstHomeViewController.swift in Sources */,
+				1CA56E26822F5E182B766B91 /* FourthMineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
