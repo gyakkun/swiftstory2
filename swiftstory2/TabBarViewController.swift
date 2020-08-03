@@ -109,6 +109,7 @@ class TabBarViewController: UITabBarController {
 
         viewArr[index].layer.add(pulse, forKey: nil)
 
+        indexFlag = index
 
     }
 
