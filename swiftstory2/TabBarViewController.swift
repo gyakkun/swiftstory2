@@ -10,6 +10,8 @@ import UIKit
 
 class TabBarViewController: UITabBarController {
 
+    var indexFlag = -1
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,7 +19,7 @@ class TabBarViewController: UITabBarController {
         // Do any additional setup after loading the view.
     }
 
-    private func addControllers(){
+    private func addControllers() {
         addChildController(ViewController(), title: "首页",
                 image: "TabBarIcon.Home.unselected", selectImg: "TabBarIcon.Home.selected")
         addChildController(SecondVideoViewController(), title: "西瓜视频",
@@ -73,6 +75,40 @@ class TabBarViewController: UITabBarController {
         nav.addChild(childVC)
 
         addChild(nav)
+
+    }
+
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        if let index = tabBar.items?.firstIndex(of: item) {
+            if indexFlag != index {
+                animationWithIndex(index: index)
+            }
+        }
+    }
+
+    private func animationWithIndex(index: Int) {
+        var viewArr = [UIView]()
+        for tabButton in tabBar.subviews {
+            if tabButton.isKind(of: NSClassFromString("UITabBarButton")!) {
+                viewArr.append(tabButton)
+            }
+        }
+
+        let pulse = CABasicAnimation(keyPath: "transform.scale")
+
+        pulse.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+
+        pulse.duration = 0.1
+
+        pulse.repeatCount = 1
+
+        pulse.autoreverses = true
+
+        pulse.fromValue = NSNumber(value: 0.7)
+        pulse.toValue = NSNumber(value: 1.1)
+
+        viewArr[index].layer.add(pulse, forKey: nil)
+
 
     }
 
