@@ -14,22 +14,21 @@ class FirstHomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-
-        let dict = ["id": "xiaowufeixia"]
-
-        self.view.backgroundColor = RGBColor(r: 15, g: 175, b: 240)
-//        print("entering http request")
-//        HttpDatas.shareInstance.requestData(.get, URLString: "https://api.bgm.tv/user/xiaowufeixia",
-//                parameters: dict, finishCallBack: {
-//            (response) in
-//            let jsonData = JSON(response)
-//            print("jsonData: \(jsonData)")
-//        })
-//
-//        print("end of http request")
-
+        print(kScreenW,kScreenH)
+        view.addSubview(button)
     }
 
+    private lazy var button : UIButton = {
 
+        let btn=UIButton.init(type:.roundedRect)
+        btn.frame = CGRect(x: 10, y: 300, width: kScreenW-20, height: 100)
+        btn.backgroundColor = UIColor.green
+        btn.addTarget(self, action: #selector(btnClick), for: .touchUpInside)
+        return btn
+    }()
+
+    @objc private func btnClick(){
+        print(123)
+    }
 }
 

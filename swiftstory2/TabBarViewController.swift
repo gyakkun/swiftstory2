@@ -20,7 +20,7 @@ class TabBarViewController: UITabBarController {
     }
 
     private func addControllers() {
-        addChildController(ViewController(), title: "首页",
+        addChildController(FirstHomeViewController(), title: "首页",
                 image: "TabBarIcon.Home.unselected", selectImg: "TabBarIcon.Home.selected")
         addChildController(SecondVideoViewController(), title: "西瓜视频",
                 image: "TabBarIcon.Video.unselected", selectImg: "TabBarIcon.Video.selected")
