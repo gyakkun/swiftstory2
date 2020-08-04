@@ -10,6 +10,11 @@ import UIKit
 
 class FourthMineViewController: UIViewController {
 
+    var style : UIStatusBarStyle = .default
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return self.style
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(button)
@@ -29,6 +34,9 @@ class FourthMineViewController: UIViewController {
 
     @objc private func btnClick(){
         print("[btnClick] btn clicked.")
+        createHidden(value: 1)
+        self.style = .lightContent
+        setNeedsStatusBarAppearanceUpdate()
         grayView.alpha = 1.0
     }
 
@@ -38,6 +46,21 @@ class FourthMineViewController: UIViewController {
         gray.alpha = 0.0
         return gray
     }()
+
+    private func createHidden(value:NSInteger){
+        if value == 1 {
+            self.navigationController?.setNavigationBarHidden(true, animated: true)
+            self.tabBarController?.tabBar.isHidden = true
+        } else {
+            self.navigationController?.setNavigationBarHidden(true, animated: true)
+            self.perform(#selector(hidTabBar), with: nil, afterDelay: 0.25)
+        }
+    }
+
+    @objc func hidTabBar(){
+        self.tabBarController?.tabBar.isHidden = true
+    }
+
 
     /*
     // MARK: - Navigation
