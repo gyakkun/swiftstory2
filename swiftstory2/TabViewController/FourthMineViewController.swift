@@ -19,6 +19,7 @@ class FourthMineViewController: UIViewController {
         super.viewDidLoad()
         view.addSubview(button)
         view.addSubview(grayView)
+        view.addSubview(loginView)
         print(kScreenW,kScreenH)
         // Do any additional setup after loading the view.
     }
@@ -37,7 +38,16 @@ class FourthMineViewController: UIViewController {
         createHidden(value: 1)
         self.style = .lightContent
         setNeedsStatusBarAppearanceUpdate()
-        grayView.alpha = 1.0
+
+        UIView.animate(withDuration: 0.5) { () -> Void in
+            self.loginView.frame = CGRect(x: 0, y: 0.5*kScreenH, width: kScreenW, height: kScreenH)
+
+            self.grayView.alpha = 1.0
+
+        }
+
+        self.perform(#selector(downMove), with: nil, afterDelay: 0.5)
+
     }
 
     private lazy var grayView : UIView = {
@@ -61,6 +71,23 @@ class FourthMineViewController: UIViewController {
         self.tabBarController?.tabBar.isHidden = true
     }
 
+    @objc func downMove(){
+        UIView.animate(withDuration: 0.2) { () -> Void in
+            self.loginView.frame = CGRect(x: 0, y: 0, width: kScreenW, height: kScreenH)
+
+            self.grayView.alpha = 1.0
+
+        }
+    }
+
+    private lazy var loginView : UIView = {
+        let loginView = UIView.init(frame: CGRect(x: 0, y: kScreenH, width: kScreenW, height: kScreenH))
+        loginView.backgroundColor = UIColor.white
+        loginView.layer.cornerRadius = 10
+        loginView.layer.masksToBounds = true
+
+        return loginView
+    }()
 
     /*
     // MARK: - Navigation

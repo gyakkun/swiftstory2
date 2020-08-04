@@ -12,6 +12,7 @@
 		1CA56510906B8FED7F4095D3 /* SecondVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA562A25E0476520F8EEFBE /* SecondVideoViewController.swift */; };
 		1CA566650828335897732414 /* ThirdMicroVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA56B3FB7BE10B0B8C40ECB /* ThirdMicroVideoViewController.swift */; };
 		1CA56AE63EDF86C88E13B378 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5655B6F508E1D536732A3 /* Constants.swift */; };
+		1CA56D8BC14429788B58D27E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5654CB1A38FC93FC794B2 /* LoginView.swift */; };
 		1CA56E26822F5E182B766B91 /* FourthMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA561FAE55C7AB59E8AFAE1 /* FourthMineViewController.swift */; };
 		8EDCEE305A833949409BCD15 /* Pods_swiftstory2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FE6C20AFA7F1990061C635 /* Pods_swiftstory2.framework */; };
 		CB0ABEF024C74927001EA131 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0ABEEB24C74927001EA131 /* TabBarViewController.swift */; };
@@ -46,6 +47,7 @@
 /* Begin PBXFileReference section */
 		1CA561FAE55C7AB59E8AFAE1 /* FourthMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthMineViewController.swift; sourceTree = "<group>"; };
 		1CA562A25E0476520F8EEFBE /* SecondVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVideoViewController.swift; sourceTree = "<group>"; };
+		1CA5654CB1A38FC93FC794B2 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1CA5655B6F508E1D536732A3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1CA56B3FB7BE10B0B8C40ECB /* ThirdMicroVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdMicroVideoViewController.swift; sourceTree = "<group>"; };
 		1CA56B8287A658C5A45CEA48 /* FirstHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstHomeViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +145,14 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		1CA56993635288EF5526E215 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5654CB1A38FC93FC794B2 /* LoginView.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
 		5A7A7D7A3E139DABB99B57DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +198,7 @@
 				1CA56757207482F5DF2958D3 /* Common */,
 				1CA562BF8079FC278AEA194E /* Network */,
 				1CA562F8D1CB17E4FC8628F4 /* TabViewController */,
+				1CA56993635288EF5526E215 /* Mine */,
 			);
 			path = swiftstory2;
 			sourceTree = "<group>";
@@ -458,6 +469,7 @@
 				1CA566650828335897732414 /* ThirdMicroVideoViewController.swift in Sources */,
 				1CA561DA78B1116070443274 /* FirstHomeViewController.swift in Sources */,
 				1CA56E26822F5E182B766B91 /* FourthMineViewController.swift in Sources */,
+				1CA56D8BC14429788B58D27E /* LoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
