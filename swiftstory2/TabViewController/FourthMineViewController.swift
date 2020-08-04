@@ -81,7 +81,7 @@ class FourthMineViewController: UIViewController {
     }
 
     private lazy var loginView : UIView = {
-        let loginView = UIView.init(frame: CGRect(x: 0, y: kScreenH, width: kScreenW, height: kScreenH))
+        let loginView = LoginView.init(frame: CGRect(x: 0, y: kScreenH, width: kScreenW, height: kScreenH))
         loginView.backgroundColor = UIColor.white
         loginView.layer.cornerRadius = 10
         loginView.layer.masksToBounds = true
