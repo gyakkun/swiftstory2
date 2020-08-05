@@ -45,7 +45,7 @@ class FourthMineViewController: UIViewController {
         setNeedsStatusBarAppearanceUpdate()
 
         UIView.animate(withDuration: 0.5) { () -> Void in
-            self.loginView.frame = CGRect(x: 0, y: 0.5 * kScreenH, width: kScreenW, height: kScreenH)
+            self.loginView.frame = CGRect(x: 0, y: 0.5 * kStatusBarH, width: kScreenW, height: kScreenH)
 
             self.grayView.alpha = 1.0
 
@@ -67,18 +67,19 @@ class FourthMineViewController: UIViewController {
             self.navigationController?.setNavigationBarHidden(true, animated: true)
             self.tabBarController?.tabBar.isHidden = true
         } else {
-            self.navigationController?.setNavigationBarHidden(true, animated: true)
+            self.navigationController?.setNavigationBarHidden(false, animated: true)
             self.perform(#selector(hidTabBar), with: nil, afterDelay: 0.25)
+
         }
     }
 
     @objc func hidTabBar() {
-        self.tabBarController?.tabBar.isHidden = true
+        self.tabBarController?.tabBar.isHidden = false
     }
 
     @objc func downMove() {
         UIView.animate(withDuration: 0.2) { () -> Void in
-            self.loginView.frame = CGRect(x: 0, y: 0, width: kScreenW, height: kScreenH)
+            self.loginView.frame = CGRect(x: 0, y: kStatusBarH, width: kScreenW, height: kScreenH)
 
             self.grayView.alpha = 1.0
 
