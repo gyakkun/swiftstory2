@@ -23,6 +23,7 @@
 		CB178CEF24BBEB830099C11C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB178CED24BBEB830099C11C /* LaunchScreen.storyboard */; };
 		CB178CFA24BBEB830099C11C /* swiftstory2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB178CF924BBEB830099C11C /* swiftstory2Tests.swift */; };
 		CB178D0524BBEB830099C11C /* swiftstory2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB178D0424BBEB830099C11C /* swiftstory2UITests.swift */; };
+		CBE3525824DAFB220067E4A1 /* LoginAndRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBE3525724DAFB220067E4A1 /* LoginAndRegisterView.xib */; };
 		CC03521CEBB455B4696993BD /* Pods_swiftstory2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDDADFE6952A06DF8C12576D /* Pods_swiftstory2Tests.framework */; };
 		E48BB8ED9E40FAF01A9F7536 /* Pods_swiftstory2_swiftstory2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5F1D2280C3F8CB46603CBC /* Pods_swiftstory2_swiftstory2UITests.framework */; };
 /* End PBXBuildFile section */
@@ -73,6 +74,7 @@
 		CB178D0024BBEB830099C11C /* swiftstory2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftstory2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB178D0424BBEB830099C11C /* swiftstory2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftstory2UITests.swift; sourceTree = "<group>"; };
 		CB178D0624BBEB830099C11C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBE3525724DAFB220067E4A1 /* LoginAndRegisterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginAndRegisterView.xib; sourceTree = SOURCE_ROOT; };
 		D6FE6C20AFA7F1990061C635 /* Pods_swiftstory2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftstory2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDDADFE6952A06DF8C12576D /* Pods_swiftstory2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftstory2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -129,9 +131,9 @@
 		1CA562F8D1CB17E4FC8628F4 /* TabViewController */ = {
 			isa = PBXGroup;
 			children = (
+				1CA56B8287A658C5A45CEA48 /* FirstHomeViewController.swift */,
 				1CA562A25E0476520F8EEFBE /* SecondVideoViewController.swift */,
 				1CA56B3FB7BE10B0B8C40ECB /* ThirdMicroVideoViewController.swift */,
-				1CA56B8287A658C5A45CEA48 /* FirstHomeViewController.swift */,
 				1CA561FAE55C7AB59E8AFAE1 /* FourthMineViewController.swift */,
 			);
 			path = TabViewController;
@@ -148,6 +150,7 @@
 		1CA56993635288EF5526E215 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				CBE3525724DAFB220067E4A1 /* LoginAndRegisterView.xib */,
 				1CA5654CB1A38FC93FC794B2 /* LoginAndRegisterView.swift */,
 			);
 			path = Mine;
@@ -331,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB178CEF24BBEB830099C11C /* LaunchScreen.storyboard in Resources */,
+				CBE3525824DAFB220067E4A1 /* LoginAndRegisterView.xib in Resources */,
 				CB178CEC24BBEB830099C11C /* Assets.xcassets in Resources */,
 				CB178CEA24BBEB810099C11C /* Main.storyboard in Resources */,
 			);

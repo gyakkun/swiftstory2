@@ -75,8 +75,10 @@ class FourthMineViewController: UIViewController {
     }
 
     private lazy var loginView: LoginAndRegisterView = {
-        let loginView = LoginAndRegisterView.init(frame: CGRect(x: 0, y: kScreenH, width: kScreenW, height: kScreenH))
-        loginView.backgroundColor = UIColor.white
+//        let loginView = LoginAndRegisterView.init(frame: CGRect(x: 0, y: kScreenH, width: kScreenW, height: kScreenH))
+        let loginView = LoginAndRegisterView.loadFromNib()
+        loginView.frame = CGRect(x: 0, y: kScreenH, width: kScreenH, height: kScreenW)
+//        loginView.backgroundColor = UIColor.white
         loginView.layer.cornerRadius = 10
         loginView.layer.masksToBounds = true
 

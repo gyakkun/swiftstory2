@@ -19,3 +19,11 @@ class LoginAndRegisterView: UIView {
     */
 
 }
+
+
+// Load Xib
+extension LoginAndRegisterView {
+    class func loadFromNib() ->LoginAndRegisterView{
+        return Bundle.main.loadNibNamed("LoginAndRegisterView", owner: nil, options: nil)?[0] as! LoginAndRegisterView
+    }
+}
