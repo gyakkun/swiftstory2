@@ -1,5 +1,5 @@
 //
-//  LoginView.swift
+//  LoginAndRegisterView.swift
 //  swiftstory2
 //
 //  Created by gyakkun on 2020/8/4.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginView: UIView {
+class LoginAndRegisterView: UIView {
 
     /*
     // Only override draw() if you perform custom drawing.

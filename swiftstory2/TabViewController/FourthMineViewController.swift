@@ -10,6 +10,7 @@ import UIKit
 
 class FourthMineViewController: UIViewController {
 
+    // 状态栏默认颜色 iPhoneX 应该是白底黑字 6s表现为白底白字
     var style: UIStatusBarStyle = .default
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return self.style
@@ -73,18 +74,25 @@ class FourthMineViewController: UIViewController {
         }
     }
 
-    @objc func hidTabBar() {
-        self.tabBarController?.tabBar.isHidden = false
-    }
+    private lazy var loginView: LoginAndRegisterView = {
+        let loginView = LoginAndRegisterView.init(frame: CGRect(x: 0, y: kScreenH, width: kScreenW, height: kScreenH))
+        loginView.backgroundColor = UIColor.white
+        loginView.layer.cornerRadius = 10
+        loginView.layer.masksToBounds = true
 
-    @objc func downMove() {
-        UIView.animate(withDuration: 0.2) { () -> Void in
-            self.loginView.frame = CGRect(x: 0, y: kStatusBarH, width: kScreenW, height: kScreenH)
+        let panView = UIPanGestureRecognizer.init(target: self,
+                action: #selector(pan(panGesture:)))
 
-            self.grayView.alpha = 1.0
+        loginView.addGestureRecognizer(panView)
 
-        }
-    }
+        return loginView
+    }()
+
+}
+
+// Actions
+extension FourthMineViewController {
+
 
     @objc func pan(panGesture: UIPanGestureRecognizer) {
 
@@ -134,28 +142,22 @@ class FourthMineViewController: UIViewController {
         }
     }
 
-    private lazy var loginView: UIView = {
-        let loginView = LoginView.init(frame: CGRect(x: 0, y: kScreenH, width: kScreenW, height: kScreenH))
-        loginView.backgroundColor = UIColor.white
-        loginView.layer.cornerRadius = 10
-        loginView.layer.masksToBounds = true
+}
 
-        let panView = UIPanGestureRecognizer.init(target: self,
-                action: #selector(pan(panGesture:)))
+// Set display props
+extension FourthMineViewController {
 
-        loginView.addGestureRecognizer(panView)
-
-        return loginView
-    }()
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func hidTabBar() {
+        self.tabBarController?.tabBar.isHidden = false
     }
-    */
+
+    @objc func downMove() {
+        UIView.animate(withDuration: 0.2) { () -> Void in
+            self.loginView.frame = CGRect(x: 0, y: kStatusBarH, width: kScreenW, height: kScreenH)
+
+            self.grayView.alpha = 1.0
+
+        }
+    }
 
 }
