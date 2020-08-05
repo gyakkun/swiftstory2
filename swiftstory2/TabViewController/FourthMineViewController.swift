@@ -148,7 +148,7 @@ extension FourthMineViewController {
 extension FourthMineViewController {
 
     @objc func hidTabBar() {
-        self.tabBarController?.tabBar.isHidden = false
+        self.tabBarController?.tabBar.isHidden = true
     }
 
     @objc func downMove() {
