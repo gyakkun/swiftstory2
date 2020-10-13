@@ -34,8 +34,7 @@ extension HttpDatas {
         // get or post
         let method = type == .get ? HTTPMethod.get : HTTPMethod.post
 
-        AF
-                .request(URLString, method: method, parameters: parameters, encoding: URLEncoding.default,
+        AF.request(URLString, method: method, parameters: parameters, encoding: URLEncoding.default,
                         headers: nil)
                 .responseJSON {
                     (response) in
