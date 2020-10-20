@@ -62,8 +62,13 @@ extension HttpDatas {
                             let id = JSON["id"]
                             print(id)
                         }
-                    case .failure(let error): break
-                            // error handling
+                        break
+                    case .failure(let error):
+                        print(error)
+                        // error handling
+                        break
+                    default :  finishCallBack(response)
+
                     }
 
                 }
