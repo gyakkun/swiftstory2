@@ -47,3 +47,22 @@ func customFont(font: CGFloat) -> UIFont {
     return UIFont.systemFont(ofSize: font)
 
 }
+
+func customLayer(num: CGFloat) -> CGFloat {
+    // 刘海屏
+    guard kScreenH <= 736 else {
+        return num * 1.3
+    }
+
+    // 5.5
+    guard kScreenH == 736 else {
+        return num * 1.1
+    }
+
+    // 4.7
+    guard kScreenH >= 736 else {
+        return num
+    }
+
+    return num * 1.2
+}
