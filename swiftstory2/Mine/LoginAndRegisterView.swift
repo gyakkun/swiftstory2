@@ -21,13 +21,25 @@ class LoginAndRegisterView: UIView {
     @IBOutlet weak var smsTextField: UITextField!
     // 注册登录按钮
     @IBOutlet weak var registerButton: UIButton!
-    // 注册类型选择
+    // 注册类型选择view
     @IBOutlet weak var loginTypeView: UIView!
     // 同意复选框
     @IBOutlet weak var agreeToggle: UIButton!
     // 查看协议view
     @IBOutlet weak var viewAgreementView: UIView!
-
+    // 已读协议view
+    @IBOutlet weak var hasViewedAgreementView: UIView!
+    // 发送验证码按钮
+    @IBOutlet weak var sendSmsButton: UIButton!
+    // 手机号错误提示
+    @IBOutlet weak var wrongPhoneNumberLabel: UILabel!
+    // 验证码错误提示
+    @IBOutlet weak var wrongSmsCodeLabel: UILabel!
+    // 密码登录按钮
+    @IBOutlet weak var passwordLoginButton: UIButton!
+    // 手机登录按钮
+    @IBOutlet weak var phoneLoginButton: UIButton!
+    
     override func layoutSubviews() {
         setUI()
 
